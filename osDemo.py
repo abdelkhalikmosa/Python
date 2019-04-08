@@ -8,14 +8,14 @@ Renaming and removing directories
 '''
 
 # get current directory
-current_directory = os.getcwd();
-print(current_directory);
+current_directory = os.getcwd()
+print(current_directory)
 
 # make new directory
-os.mkdir('logFiles');
+os.mkdir('logFiles')
 
 # rename directory
-os.rename('logFiles','logs');
+os.rename('logFiles','logs')
 
 #remove directory
-#os.rmdir('logs');
+#os.rmdir('logs')
