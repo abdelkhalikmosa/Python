@@ -18,4 +18,4 @@ os.mkdir('logFiles');
 os.rename('logFiles','logs');
 
 #remove directory
-os.rmdir('logs');
+#os.rmdir('logs');
