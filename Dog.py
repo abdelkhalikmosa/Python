@@ -25,6 +25,10 @@ class Bulldog(Dog):
     def run(self, speed):
         return "{} runs {}".format(self.name, speed)
 
+# Overriding the functionality of a parent class
+class someOtherBreed(Dog):
+    species = 'retile'
+
 # get the maximum number
 # The symbol * enables take in a variable number of arguments
 # The variable associated with * becomes iterable 
@@ -36,6 +40,7 @@ molly = Dog('Molly', 3)
 charlie = Dog('Charlie', 5)
 daisy = Dog('Daisy', 4)
 jim = Bulldog("Jim", 8)
+beans = someOtherBreed("Beans", 1)
 
 # Calling instance methods
 print(daisy.description())
@@ -53,4 +58,7 @@ print(isinstance(jim, Dog))
 print(isinstance(jim, Bulldog))
 print(isinstance(molly, Bulldog))
 print(isinstance(molly, Dog))
+
+print(jim.species)
+print(beans.species)
 
