@@ -1,12 +1,6 @@
 import sys
 
-# Syntax errors vs Exceptions
-# Syntax error
-# The following print()) statement is syntacticly incorrect as it as an extra )
-# print(5/0)) 
-
 # Exception 
-# Correcting the print () by removing the extra ) results in an exception error as division by zero is not allowed
 # Python uses try and except to handle exceptions
 try:
     print(5/0)
@@ -25,11 +19,22 @@ except AssertionError as e:
     print(e)
 
 
+def launch_app():
+    print("Simulates launching the application")
+
+
+# Use the else clause to instruct Python to execute a certain block only on the absecnce of exceptions
+# finally enables you to execute sections of code that should always run, with or without any previously encountered exceptions.
+
 try:
     with open('template.yaml') as template:
         read_data = template.read()
 except FileNotFoundError as e:
     print(e)
+else:
+    launch_app()
+finally:
+    print("Removing any temporary files")
 
 
 """
