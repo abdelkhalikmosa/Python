@@ -1,6 +1,6 @@
 def add(num1, num2):
     """Add Function"""
-    return num1 + num2
+    return num1 + num1
 
 
 def subtract(num1, num2):
